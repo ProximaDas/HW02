@@ -34,18 +34,33 @@
 ################################################################################
 # Write your functions below:
 # Body
-
-
-
-
-
-
-
-
-
-
-
-
+def two_by_two():
+	plus = '+'
+	hyp = '-'
+	bar = '|'
+	space = ' '
+	horizontal = plus + hyp*4 + plus + hyp*4 + plus
+	vertical = bar + space*4 + bar + space*4 + bar
+	for x in range(1,12):
+		if x in (1,6,11):
+			print horizontal
+		else:
+			print vertical
+	
+def four_by_four():
+	plus = '+'
+	hyp = '-'
+	bar = '|'
+	space = ' '
+	horizontal = (plus + hyp*4 + plus + hyp*4 ) * 2 + plus
+	vertical = (bar + space*4 + bar + space*4 ) * 2 + bar
+	for x in range(1,23):
+		if x in (1,6,11,17,22):
+			print horizontal
+		else:
+			print vertical
+		 	
+			
 # Write your functions above:
 ################################################################################
 def main():
@@ -55,7 +70,8 @@ def main():
     four_by_four()
     """
     print("Hello World!")
-    
+    two_by_two()
+    four_by_four()
 
 
 

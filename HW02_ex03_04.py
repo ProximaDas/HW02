@@ -28,12 +28,16 @@
 ################################################################################
 # Write your functions below:
 # Body
+def do_twice(f,some_value):
+	f(some_value)
+	f(some_value)
 
+def print_spam(argument):
+	print argument
 
-
-
-
-
+def do_four(func,val):
+	do_twice(func,val)
+	do_twice(func,val)
 
 # Write your functions above:
 ################################################################################
@@ -43,6 +47,7 @@ def main():
     do_four([function object], [some_value])
     """
     print("Hello World!")
+    do_four(print_spam,'spam')
     
 
 

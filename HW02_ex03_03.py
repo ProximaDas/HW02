@@ -14,12 +14,10 @@
 ################################################################################
 # Write your function below:
 # Body
-
-
-
-
-
-
+def right_justify(s):
+	length = len(s)
+	space = ' '
+	print(space*(70-length)+s)
 
 # Write your function above:
 ################################################################################

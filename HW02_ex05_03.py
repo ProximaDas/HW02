@@ -20,14 +20,25 @@
 ################################################################################
 # Write your functions below:
 # Body
+def check_fermat(a,b,c,n):
+	lhs = a**n + b**n
+	rhs = c**n
+	if lhs==rhs and n > 2:
+		print "Holy smokes, Fermat was wrong!"
+	elif lhs==rhs and n == 2:
+		print "Fermat was right."
+	else:
+		print "No, that doesn't work."
+		
 
+def check_fermat_ints():
+	w = input('Enter value for a: ')
+	x = input('Enter value for b: ')
+	y = input('Enter value for c: ')
+	z = input('Enter value for n: ')
 
-
-
-
-
-
-
+	# Convert inputs to integer and calculate
+	check_fermat(int(w),int(x),int(y),int(z))
 
 # Write your functions above:
 ################################################################################
@@ -40,6 +51,7 @@ def main():
     check_fermat()
     """
     print("Hello World!")
+    check_fermat_ints()
 
 
 
